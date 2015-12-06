@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head><title>Web site</title>
+<link id="theme" rel="stylesheet" type="text/css" href="style.css" title="theme" />
+<script language="javascript">
+   function use()
+   {
+      frm.T1.focus();
+   }
+
+function check()
+{
+   k=frm.T1.value.length; 
+   j= frm.T2.value.length;
+   if( (k <=0 ) || ( j<=0))
+   {
+		 if(k<=0)
+	 	{
+			alert('Enter  UserId');
+			frm.T1.value=""; 
+			frm.T1.focus();
+			return false;
+		 }
+		if(j<=0)
+		 {
+			alert('Enter  Password');
+			frm.T2.value="";
+			frm.T2.focus();
+			return false;
+		   }
+		   else
+		   {
+		   return true;
+		   }
+   }
+   }
+  </script>
+</head>
+<body>
+<div id="top"><div class="overlay"></div></div><div id="wrapper"><div class="overlay"></div><div class="border-top"></div>  
+<div class="content"><div id="container"><div class="hd"><div id="container-top"></div><div id="banner"></div><div id="hmenu-wpr"><ul id="hmenu" class="sf-menu sf-js-enabled sf-shadow">
+<li class="current" style="border:none">
+
+
+<a class="toplvl sf-with-ul" href="index.html">Home</a></li>
+<li><a href="student.html" class="toplvl">Student</a></li>
+<li><a class="toplvl sf-with-ul" href="faculty.html">Faculty</a></li>
+<li><a class="toplvl sf-with-ul" href="admin.html">Admin</a></li></div></div>
+
+
+
+<div class="bd"><div id="page"><div id="main"><div class="content"><h1>Welcome to our website</h1>
+<form method=get action="stulogin.jsp" name=frm onSubmit="return check()">
+<br><br>
+<center><center>&nbsp;<h2><b>STUDENT LOGIN</h2>
+Student Id&nbsp;&nbsp;<input type="text" name="T1" value=""><br><br>
+<b>&nbsp;&nbsp;Password&nbsp;&nbsp;<input type="password" name="T2" value=""><br><br>
+<input type="submit" name="Submit" value="Submit">
+<br><br>
+Forgot password? Contact Your Admin
+<br>
+<br>
+<H3><font color=purple size=4>New User Get <font>Register Here&nbsp;<a href="stureg.jsp"><font color="black">Register</a></font>
+</form>
+
+
+
+</div></div><div class="clear" style="height:500px"></body></html>

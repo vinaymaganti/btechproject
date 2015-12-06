@@ -1,0 +1,15 @@
+Step1:
+install java.
+set class path.
+Step2:
+install tomcat or netbeans contains tomcat server.
+Step3:
+install oracle database.
+create user with name ktc and password ktc.
+execute database commands.
+Step4:
+copy code and paste it in tomcat server.
+Step5:
+Run the server.
+Step6:
+Login admin with unique id as admin and password admin.
